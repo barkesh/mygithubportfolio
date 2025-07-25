@@ -1,0 +1,370 @@
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Header Section */
+#home {
+    background: linear-gradient(135deg, #272727 0%, #a57b07 100%);
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.contact-info h2 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.contact-info p {
+    margin: 2px 0;
+    font-size: 0.9em;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* About Section */
+#about {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.profile-image {
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #a57b07;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Skills Section */
+#skills {
+    padding: 80px 20px;
+    background-color: white;
+}
+
+#skills h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #a57b07;
+}
+
+.skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.skill-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #f0f0f0;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.skill-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.skill-icon.html { color: #e34c26; }
+.skill-icon.js { color: #f7df1e; }
+.skill-icon.java { color: #007396; }
+.skill-icon.react { color: #61dafb; }
+.skill-icon.node { color: #339933; }
+.skill-icon.css { color: #1572b6; }
+
+.skill-card h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.skill-card p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Projects Section */
+#projects {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+}
+
+#projects h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #a57b07;
+}
+
+.projects-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-item {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #a57b07;
+}
+
+.project-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.project-item ul {
+    list-style: none;
+}
+
+.project-item li {
+    padding: 5px 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+.project-item li:before {
+    content: "•";
+    color: #a57b07;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Recommendations Section */
+#recommendation {
+    padding: 80px 20px;
+    background-color: white;
+}
+
+#recommendation h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #a57b07;
+}
+
+.recommendations-container {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.recommendation-card {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #a57b07;
+}
+
+.recommendation-card p {
+    font-style: italic;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Recommendation Form */
+.recommendation-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.recommendation-form input,
+.recommendation-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.recommendation-form input:focus,
+.recommendation-form textarea:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.recommendation-form button {
+    background: linear-gradient(135deg, #272727 0%, #a57b07 100%);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.recommendation-form button:hover {
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background-color: #202020;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-image img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .about-text h1 {
+        font-size: 2em;
+    }
+    
+    .skills-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+    }
+    
+    .recommendations-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Scroll to home button */
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.scroll-top:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+}
+
+.scroll-top.visible {
+    display: flex;
+}
